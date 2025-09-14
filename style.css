@@ -362,7 +362,7 @@ pre.w-code-block code {
   font-size: 12px !important;
   line-height: 14px !important;
   text-decoration: none !important;
-  display: none !important;
+  display: inline-block !important;
   position: fixed !important;
   inset: auto 12px 12px auto !important;
   transform: none !important;
@@ -2755,11 +2755,16 @@ textarea.w-input, textarea.w-select {
   }
 
   .efi-button-menu {
+    width: 5vw;
     padding: 0;
   }
 
   .efi-button-menu.w--open {
     background-color: #000;
+  }
+
+  .efi-brand {
+    width: 7vw;
   }
 
   .efi-jumbo {
@@ -2840,6 +2845,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
+  .efi-button-menu {
+    width: 5vw;
+  }
+
   .efi-brand {
     width: 10vw;
     display: flex;
@@ -2868,6 +2877,15 @@ textarea.w-input, textarea.w-select {
   .efi-nav-link.light {
     background-color: var(--black13);
     color: var(--floralwhite);
+  }
+
+  .efi-button-menu {
+    background-color: var(--floralwhite);
+    width: 5vw;
+  }
+
+  .efi-button-menu.w--open {
+    background-color: var(--floralwhite);
   }
 
   .efi-brand {
@@ -2939,5 +2957,4 @@ textarea.w-input, textarea.w-select {
     grid-area: span 1 / span 1 / span 1 / span 1;
     place-self: center;
   }
-
 }
