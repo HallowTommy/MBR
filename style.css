@@ -362,7 +362,7 @@ pre.w-code-block code {
   font-size: 12px !important;
   line-height: 14px !important;
   text-decoration: none !important;
-  display: none !important;
+  display: inline-block !important;
   position: fixed !important;
   inset: auto 12px 12px auto !important;
   transform: none !important;
@@ -2690,7 +2690,7 @@ textarea.w-input, textarea.w-select {
   font-family: Oswald, sans-serif;
 }
 
-.link {
+.link, .link-2 {
   color: var(--hover);
 }
 
